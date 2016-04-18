@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Accountant</string>
+    <string name="account_practitioner">会计从业资格</string>
+    <string name="change_exam">切换考试</string>
+    <!--会计从业资格考试科目-->
+    <string name="account_basis">会计基础</string>
+    <string name="xx">财经法规</string>
 </resources>
