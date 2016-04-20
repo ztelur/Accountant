@@ -19,4 +19,9 @@ public class MainTabView extends View {
     public MainTabView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
+
+
+    interface TabViewListener {
+        void onClick();
+    }
 }
