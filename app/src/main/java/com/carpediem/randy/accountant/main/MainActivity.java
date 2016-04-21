@@ -6,6 +6,7 @@ import com.carpediem.randy.accountant.R;
 import com.carpediem.randy.accountant.base.BaseActivity;
 import com.carpediem.randy.accountant.main.presenter.DrawerPresenter;
 import com.carpediem.randy.accountant.main.view.DrawerView;
+import com.carpediem.randy.accountant.main.view.MainFragment;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -18,6 +19,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        addFragment(new MainFragment(),R.id.main_frame);
         initPresenter();
     }
 
