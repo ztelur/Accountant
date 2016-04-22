@@ -1,6 +1,7 @@
 package com.carpediem.randy.accountant.main.view;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -42,6 +43,7 @@ public class MainTabView extends LinearLayout implements View.OnClickListener{
 
     private void init(Context context) {
         inflate(context,R.layout.item_main_tab_view,this);
+        setBackgroundColor(Color.YELLOW);
         ButterKnife.bind(this);
         registerListener();
     }

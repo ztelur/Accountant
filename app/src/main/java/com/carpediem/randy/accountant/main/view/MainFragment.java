@@ -83,19 +83,21 @@ public class MainFragment extends BaseFragment implements MainTabView.TabViewLis
                     fragment = newsFragment;
                     break;
             }
+            transaction.add(R.id.main_fragment_fragment_container,fragment,fragTag);
         } else {
             transaction.show(fragment);
         }
-
-        transaction.add(R.id.main_fragment_fragment_container,fragment);
         transaction.commitAllowingStateLoss();
+        mCurrentIndex = index;
         mFragmentLock.unlock();
+
     }
 
     private void initDefaultFragment(BaseFragment fragment) {
         FragmentManager manager = getFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.main_fragment_fragment_container,fragment);
+        String tag = getFragmentTag(MainTabView.TAB_INDEX_EXERCISE);
+        transaction.add(R.id.main_fragment_fragment_container,fragment,tag);
         transaction.commit();
         mCurrentIndex = MainTabView.TAB_INDEX_EXERCISE;
     }

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".main.MainActivity">
 
     <FrameLayout
@@ -12,11 +13,11 @@
         android:layout_height="match_parent">
 
     </FrameLayout>
-    
+
     <com.carpediem.randy.accountant.main.view.DrawerView
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:id="@+id/left_drawer">
 
     </com.carpediem.randy.accountant.main.view.DrawerView>
-</android.support.v4.widget.DrawerLayout>
+</LinearLayout>
