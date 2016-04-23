@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#00ff00"
     android:layout_height="match_parent">
     <LinearLayout
+        android:background="#00ffff"
         android:layout_width="match_parent"
         android:layout_height="100dp">
         <RelativeLayout
+            android:background="#00fafa"
+            android:alpha="0.5"
             android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="50dp">
             <ImageView
+                android:id="@+id/drawer_icon"
                 android:layout_width="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_height="20dp" />
             <TextView
+                android:layout_toRightOf="@id/drawer_icon"
                 android:layout_width="wrap_content"
                 android:text="@string/account_practitioner"
+                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="wrap_content"
                 android:text="@string/change_exam"
+                android:layout_alignParentRight="true"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
     </LinearLayout>
-
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/drawer_account_basis"
+            android:text="会计基础"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/drawer_finance_laws"
+            android:layout_width="match_parent"
+            android:text="财经法规"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/drawer_computerized_automation"
+            android:layout_width="match_parent"
+            android:text="会计电算化"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

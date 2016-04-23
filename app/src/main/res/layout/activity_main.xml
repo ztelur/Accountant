@@ -16,7 +16,6 @@
     <com.carpediem.randy.accountant.main.view.DrawerView
         android:layout_width="240dp"
         android:layout_gravity="start"
-
         android:layout_height="match_parent"
         android:id="@+id/left_drawer">
 
