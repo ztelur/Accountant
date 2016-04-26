@@ -2,8 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <com.carpediem.randy.accountant.exercise.presenter.ExerciseHeader
         android:layout_width="match_parent"
-        android:text="exercise"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+
+    </com.carpediem.randy.accountant.exercise.presenter.ExerciseHeader>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_recycle_view">
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

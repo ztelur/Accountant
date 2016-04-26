@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.carpediem.randy.accountant.R;
 import com.carpediem.randy.accountant.base.BaseFragment;
-import com.carpediem.randy.accountant.exercise.ExerciseFragment;
+import com.carpediem.randy.accountant.exercise.view.ExerciseFragment;
 import com.carpediem.randy.accountant.news.NewsFragment;
 import com.carpediem.randy.accountant.plan.PlanFragment;
 
